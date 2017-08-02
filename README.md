@@ -7,6 +7,7 @@ React官方教程：井字游戏
 2. `$ cd React-Tutorial-tic-tac-toe-game`
 
 ## 2.运行本地服务器
+`$ npm install`安装依赖
 `$ npm start`
 
 ## 3.在浏览器中预览
