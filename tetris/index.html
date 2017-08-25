@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>俄罗斯方块</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div id="tetris">
+		<h2>俄罗斯方块</h2>
+		<p>请用方向键和空格键操作：上 -> 旋转，左 -> 左移，右 -> 右移，下 -> 下移，空格 -> 坠落</p>
+		<div id="game" class="game"></div>
+		<div id="next" class="next"></div>
+		<div class="info">
+			<div>已用时：<span id="time">0</span>s</div>
+			<div>已得分：<span id="score">0</span>分</div>
+		</div>
+		<div id="result"></div>
+	</div>
+	<script src="js/square.js"></script>
+	<script src="js/squareFactory.js"></script>
+	<script src="js/game.js"></script>
+	<script src="js/local.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

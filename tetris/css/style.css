@@ -1,0 +1,51 @@
+#tetris {
+	width: 350px;
+	margin: 10px auto;
+	position: relative;
+}
+.game {
+	width: 200px;
+	height: 400px;
+	background-color: #F2FAFF;
+	border-left: 1px solid blue;
+	border-right:  1px solid blue;
+	border-bottom:  1px solid blue;
+	position: absolute;
+	top: 100px;
+}
+.next {
+	width: 80px;
+	height: 80px;
+	background-color: #F2FAFF;
+	border: 1px solid blue;
+	position: absolute;
+	top: 100px;
+	left: 250px;
+}
+.info {
+	position: absolute;
+	top: 180px;
+	left: 250px;
+}
+#result {
+	position: absolute;
+	top: 300px;
+	left: 250px;
+}
+.none, .current, .done {
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	box-sizing: border-box;
+}
+.none {
+	background-color: #F2FAFF;
+}
+.current {
+	background-color: pink;
+	border: 1px solid red;
+}
+.done {
+	background-color: gray;
+	border: 1px solid black;
+}
