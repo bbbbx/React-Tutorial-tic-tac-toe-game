@@ -20,7 +20,7 @@ class Board extends React.Component {
 
   render() {
     return (
-      <div className="board" ref="rows">
+      <div className="board" ref="game">
         {this.renderSquare(0)}
         {this.renderSquare(1)}
         {this.renderSquare(2)}
@@ -75,6 +75,13 @@ class Game extends React.Component {
       stepNumber: step,
       xIsNext: (step % 2) ? false : true,
     });
+    //去除 className
+    const history = this.state.history;
+    const current = history[this.state.stepNumber];
+    const winner = calculateWinner(current.squares);
+    this.refs.Board.refs.game.children[winner[0]].className="square";
+    this.refs.Board.refs.game.children[winner[1]].className="square";
+    this.refs.Board.refs.game.children[winner[2]].className="square";
   }
 
   render() {
@@ -94,9 +101,9 @@ class Game extends React.Component {
     if (winner) {
       status = '胜者是: ' + current.squares[winner[0]];
       //更改赢的方块的 className 
-      this.refs.Board.refs.rows.children[winner[0]].className="square wonSquare";
-      this.refs.Board.refs.rows.children[winner[1]].className="square wonSquare";
-      this.refs.Board.refs.rows.children[winner[2]].className="square wonSquare";
+      this.refs.Board.refs.game.children[winner[0]].className="square wonSquare";
+      this.refs.Board.refs.game.children[winner[1]].className="square wonSquare";
+      this.refs.Board.refs.game.children[winner[2]].className="square wonSquare";
     } else {
       status = '下一个玩家是: ' + (this.state.xIsNext ? '✘' : 'O');
     }
