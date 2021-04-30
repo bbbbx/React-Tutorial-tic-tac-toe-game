@@ -1,8 +1,7 @@
 # js-game
 一些前端的小游戏 demo
 
-## [tic-tac-toe](http://venusworld.cn/js-game/tic-tac-toe/build)
-基于`ReactJS`的井字游戏：[live demo](http://venusworld.cn/js-game/tic-tac-toe/build)
+## [tic-tac-toe](https://bbbbx.github.io/js-game/tic-tac-toe/build)
 
 脚手架：`create-react-app`
 
@@ -24,7 +23,8 @@
 #### 5. 打包
 `$ npm run build`
 
-## [tetris](http://venusworld.cn/js-game/tetris)
-原生`JS`的俄罗斯方块：[live demo](http://venusworld.cn/js-game/tetris)
+## [tetris](http://bbbbx.github.io/js-game/tetris)
+原生`JS`的俄罗斯方块
+
 #### 截屏
 ![](tetris/shotScreen.png)
